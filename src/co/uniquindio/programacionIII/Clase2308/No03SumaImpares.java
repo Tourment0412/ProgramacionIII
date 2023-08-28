@@ -1,6 +1,6 @@
 package co.uniquindio.programacionIII.Clase2308;
 
-public class No3SumaImpares {
+public class No03SumaImpares {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -1,8 +1,7 @@
-package co.uniquindio.programacionIII.recursividad;
+package co.uniquindio.programacionIII.Clase2308;
 
-public class RecorrerArray {
-	
-	
+public class No05ImprimirArreglo {
+
 	public static void main (String []args) {
 		Object[] array= {1,2,3,4,5};
 		System.out.print("{");
@@ -22,6 +21,6 @@ public class RecorrerArray {
 	}
 	
 	
-
+	
 
 }

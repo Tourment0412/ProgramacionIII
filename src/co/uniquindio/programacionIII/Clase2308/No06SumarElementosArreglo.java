@@ -1,6 +1,6 @@
 package co.uniquindio.programacionIII.Clase2308;
 
-public class No6SumarElementosArreglo {
+public class No06SumarElementosArreglo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

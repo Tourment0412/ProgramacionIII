@@ -1,6 +1,6 @@
 package co.uniquindio.programacionIII.Clase2308;
 
-public class No2DividirRecursivo {
+public class No02DividirRecursivo {
 	
 	
 	/*Para hacer divisiones mediante restas sucesivas la idea es contar cada resta
