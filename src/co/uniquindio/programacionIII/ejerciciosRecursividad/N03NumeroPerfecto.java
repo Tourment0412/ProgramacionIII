@@ -1,5 +1,13 @@
 package co.uniquindio.programacionIII.ejerciciosRecursividad;
 
+
+
+/*
+ * Un número N es perfecto si la suma de sus divisores (excluido el propio N) es N. Por
+ejemplo 28 es perfecto, pues sus divisores (excluido el 28) son 1,2,4,7 y 14 su suma da
+28. Escriba un método que indique si N es perfecto.
+ */
+
 public class N03NumeroPerfecto {
 
 	public static void main(String[] args) {
