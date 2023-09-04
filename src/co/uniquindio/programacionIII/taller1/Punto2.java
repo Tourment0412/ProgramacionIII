@@ -4,7 +4,7 @@ package co.uniquindio.programacionIII.taller1;
  * Invertir un número N dado por parámetro. Debe retornar un número entero,
  * trate el número como entero, no lo convierta a String.
  * 
- * @author yo
+ * @author quintero
  *
  */
 public class Punto2 {
