@@ -14,6 +14,7 @@ public class N02OrdenarArrayDescendente {
 		// TODO Auto-generated method stub
 		int [] array1= {2,3,5,1,6,7,0,8,4,9};
 		int [] array2= Arrays.copyOf(array1, array1.length);
+		int [] array3= Arrays.copyOf(array1, array1.length);
 		
 		
 		ordenarArrayDescendenteAux(array1, 0, 0);
@@ -21,6 +22,11 @@ public class N02OrdenarArrayDescendente {
 		
 		ordenarArrayDescendente2(array2, 0, 1);
 		imprimirArray(array2, 0);
+		
+		
+		ordenarArrayDescendenteTry(array3, 0, 1);
+		imprimirArray(array3, 0);
+	
 		
 
 	}
@@ -62,6 +68,27 @@ public class N02OrdenarArrayDescendente {
 				ordenarArrayDescendente2(array, i, j+1);
 			}
 		}
+	}
+	
+	/*
+	 * ojo con las decisiones que solo sean void, estas deben de llevar un return y pues lo que solo sea modificacion de 
+	 * solo se debe llamar al final por que, si hago al final asi entre o no a la decisicion de mayor lo va a hacer que
+	 * es lo que se necesita
+	 */
+	public static void ordenarArrayDescendenteTry(int[]array,int i,int j) {
+		if (i == array.length - 1)
+			return;
+		if (j == array.length) {
+			ordenarArrayDescendenteTry(array, i + 1, i + 2);
+			return;
+		}
+		if(array[i]<array[j]) {
+			int aux=array[i];
+			array[i]=array[j];
+			array[j]=aux;
+			
+		}
+		ordenarArrayDescendenteTry(array, i, j+1);
 	}
 	
 	
