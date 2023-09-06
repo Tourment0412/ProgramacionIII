@@ -10,22 +10,23 @@ public class N01DeterminarPotencia {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(determinarPotencia(2, 16));
+		System.out.println(determinarPotencia(10, 50));
 
 	}
 	
 	
 	
-	public static boolean determinarPotencia(int n,int b) {
-		return determinarPotenciaAux(n, b, n);
+	public static boolean determinarPotencia(int b,int n) {
+		//return determinarPotenciaAux(b, n, b);
+		return determinarPotencia2(b, n, b);
 	}
 	
-	public static boolean determinarPotenciaAux(int n, int b, int acum) {
+	public static boolean determinarPotenciaAux(int b, int n, int acum) {
 		boolean ban=true;
-		if(acum<=b) {
+		if(acum<=n) {
 			
-			if (acum!=b) {
-				return determinarPotenciaAux(n,b,acum*n);
+			if (acum!=n) {
+				return determinarPotenciaAux(b,n,acum*b);
 			}
 			else {
 				return ban;
@@ -34,6 +35,12 @@ public class N01DeterminarPotencia {
 		return !ban;
 		
 	
+	}
+	
+	public static boolean determinarPotencia2(int b,int n,int acum) {
+		if(acum>n) return false;
+		if(acum!=n) return determinarPotencia2(b, n, acum*b);
+		return true;
 	}
 
 }

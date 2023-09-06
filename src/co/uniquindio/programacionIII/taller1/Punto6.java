@@ -8,7 +8,7 @@ package co.uniquindio.programacionIII.taller1;
  * Por ejemplo, la suma descendente del número 4578 es igual a 4578 + 578 + 78 +
  * 8 = 5242.
  * 
- * @author amador
+ * 
  *
  */
 public class Punto6 {
