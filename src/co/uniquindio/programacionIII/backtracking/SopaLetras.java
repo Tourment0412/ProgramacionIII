@@ -70,6 +70,8 @@ public class SopaLetras {
 			resolverSopaAux(sopa, cadena, i + 1, 0, arrPosiciones);
 			return;
 		}
+		
+		//Verificacion de direcciones
 		if (sopa[i][j] == cadena.charAt(0)) {
 			arrPosiciones[0][0] = i;
 			arrPosiciones[0][1] = j;
