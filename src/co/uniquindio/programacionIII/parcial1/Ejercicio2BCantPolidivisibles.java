@@ -36,6 +36,7 @@ public class Ejercicio2BCantPolidivisibles {
 		if(esPolidivisibleAux(a[i], calcularDigitos(a[i], 0))) return contarPolidivisiblesAux(a, i+1, cont+1);
 		return contarPolidivisiblesAux(a, i+1, cont);
 	}
+	//Siendo este metodo el que se llame en main
 	private static int contarPolidivisibles(int[]a) {
 		return contarPolidivisiblesAux(a, 0, 0);
 	}
